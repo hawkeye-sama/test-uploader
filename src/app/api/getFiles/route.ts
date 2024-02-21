@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { UserFileModel } from "../../common/models";
 import { UserFile, connect } from "../mongoose";
 
+export const dynamic = "force-dynamic";
+
 export const GET = async () => {
   try {
     // connect to mongodb

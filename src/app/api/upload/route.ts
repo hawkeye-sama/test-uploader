@@ -27,8 +27,6 @@ export const POST = async (req: NextRequest) => {
       filePath: `https://storage.cloud.google.com/${BUCKET_NAME}/uploads/${_id}.pdf`,
     });
 
-    await newFile.save();
-
     // GCP Upload by using Storage API
 
     const filePath = `uploads/${String(newFile._id)}.pdf`;
@@ -59,8 +57,12 @@ export const POST = async (req: NextRequest) => {
       blobStream.end(buffer);
     });
 
+    await newFile.save();
+
     return new NextResponse(JSON.stringify({ data: newFile }));
   } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
     return new NextResponse(JSON.stringify(error), { status: 500 });
   }
 };
