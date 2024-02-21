@@ -43,20 +43,11 @@ export const POST = async (req: NextRequest) => {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    // Wrap the upload logic in a promise
-    await new Promise((resolve, reject) => {
-      const blob = bucket.file(filePath);
-      const blobStream = blob.createWriteStream({
-        resumable: false,
-      });
+    // Save the file to Storage
+    const blob = bucket.file(filePath);
+    await blob.save(buffer);
 
-      blobStream
-        .on("error", (err) => reject(err))
-        .on("finish", () => resolve(true));
-
-      blobStream.end(buffer);
-    });
-
+    // Save to DB
     await newFile.save();
 
     return new NextResponse(JSON.stringify({ data: newFile }));
