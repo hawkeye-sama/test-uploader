@@ -35,7 +35,7 @@ export const POST = async (req: NextRequest) => {
       projectId: `${PROJECT_ID}`,
       credentials: {
         client_email: `${CLIENT_EMAIL}`,
-        private_key: `${PRIVATE_KEY}`,
+        private_key: PRIVATE_KEY?.split(String.raw`\n`).join("\n"),
       },
     });
     const bucket = storage.bucket(`${BUCKET_NAME}`);
