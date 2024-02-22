@@ -5,7 +5,7 @@ function Loader() {
   return (
     <svg
       aria-hidden="true"
-      className="transition-all self-center duration-300 ease-in-out group-hover:text-font group-hover:text-opacity-20 group-hover:fill-primary w-16 h-16 animate-spin text-primary text-opacity-20 fill-primary"
+      className="transition-all self-center duration-300 ease-in-out group-hover:text-font group-hover:text-opacity-20 group-hover:fill-primary w-inherit h-inherit animate-spin text-primary text-opacity-20 fill-primary"
       viewBox="0 0 100 101"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

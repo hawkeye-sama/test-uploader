@@ -84,8 +84,10 @@ function FileList() {
               </div>
             </div>
             {isLoading ? (
-              <div className="flex justify-center">
-                <Loader />
+              <div className="flex w-full justify-center">
+                <div className="w-14 h-14">
+                  <Loader />
+                </div>
               </div>
             ) : (
               <>
