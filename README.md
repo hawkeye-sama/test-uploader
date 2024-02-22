@@ -5,7 +5,7 @@ TechStack
 - Node v18.17.0
 - NextJS 14
 - NextJS API Functions for Backend in NodeJS ( see /src/api folder )
-- MongoDB
+- MongoDB 6.0.13
 - GCP
 
 ## Setup
