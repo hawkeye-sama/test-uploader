@@ -19,15 +19,22 @@ function FileList() {
                 <Loader />
               </div>
             ) : (
-              <div className="grid w-full grid-cols-3 justify-center gap-5">
-                {fileList?.map((file) => (
-                  <FileCard
-                    key={file._id}
-                    filename={file.filename}
-                    filePath={file.filePath}
-                  />
-                ))}
-              </div>
+              <>
+                {fileList.length === 0 ? (
+                  <p className="text-font">No Files have been uploaded</p>
+                ) : (
+                  <div />
+                )}
+                <div className="grid w-full grid-cols-3 justify-center gap-5">
+                  {fileList?.map((file) => (
+                    <FileCard
+                      key={file._id}
+                      filename={file.filename}
+                      filePath={file.filePath}
+                    />
+                  ))}
+                </div>
+              </>
             )}
           </div>
         </div>
