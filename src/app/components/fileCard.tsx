@@ -13,7 +13,14 @@ function FileCard({ filename, filePath }: FileCardProps) {
   const extension = split[1];
 
   return (
-    <div className="bg-white px-4 py-2 h-20 flex rounded-xl border border-border">
+    <div
+      className="bg-white px-4 py-2 h-20 flex rounded-xl border border-border transition-all ease-in-out duration-300 hover:border-primary hover:shadow-2xl hover:-translate-y-2 hover:cursor-pointer"
+      role="presentation"
+      onClick={(e) => {
+        e.preventDefault();
+        window.open(filePath, "_blank");
+      }}
+    >
       <p className="self-center text-start text-font w-full">
         {name.length > 18 ? `${name.substring(0, 18)}.${extension}` : filename}
       </p>

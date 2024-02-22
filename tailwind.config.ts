@@ -14,6 +14,8 @@ const config: Config = {
       white: "#FFFFFF",
       border: "#D9D9D9",
       gray: "##F9FAFB",
+      "input-bg": "#F7F8F8",
+      "primary-red": "#CA3A31",
     },
     extend: {
       backgroundImage: {
