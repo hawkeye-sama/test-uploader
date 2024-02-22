@@ -14,7 +14,6 @@ TechStack
 
 - [x] Fuzzy filename search
 - [x] Drag & Drop File Upload
-- [x] Mobile UI Optimizations
 
 ## API Endpoints
 
