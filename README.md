@@ -20,7 +20,7 @@ TechStack
 
 ## Setup
 
-- Download the code first, after that instlal dependendencies ( inside the downloaded folder ):
+- Download the code first, after that install dependendencies ( inside the downloaded folder ):
 
 `yarn`
 
