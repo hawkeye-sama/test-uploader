@@ -14,7 +14,7 @@ function Header() {
               The usecase of this app is to allow users to upload pdf files and
               also allow them to download files.
             </p>
-            <div className="flex self-center w-[30rem]">
+            <div className="flex self-center w-full md:w-[30rem]">
               <FileUploader />
             </div>
           </div>

@@ -64,12 +64,12 @@ function FileList() {
     <section id="fileList">
       <div className="ml-auto mr-auto flex flex-col items-center justify-center md:flex-row pt-4 pb-10">
         <div className="w-full">
-          <div className="mx-auto gap-y-2 text-center text-base md:text-xl md:line-h flex flex-col md:px-20 px-2 w-full">
-            <div className="flex flex-row justify-between items-center">
-              <h1 className="text-2xl font-bold md:text-4xl text-start text-header">
+          <div className="mx-auto gap-y-2 text-center text-base md:text-xl md:line-h flex flex-col md:px-20 px-4 w-full">
+            <div className="flex flex-col md:flex-row justify-between md:items-center">
+              <h1 className="flex md:self-center self-start text-2xl font-bold md:text-4xl text-start text-header">
                 All Files
               </h1>
-              <div className="w-[21.2rem] mb-4">
+              <div className="w-full md:w-[21.2rem] mb-4 mt-2 md:mt-0">
                 <Input
                   htmlFor="search"
                   placeholder="Search for file"
@@ -102,7 +102,7 @@ function FileList() {
                     <span className="text-primary-red">{searchInput}</span> name
                   </p>
                 ) : (
-                  <div className="grid w-full grid-cols-3 justify-center gap-5">
+                  <div className="md:grid w-full md:grid-cols-3 flex flex-col justify-center gap-5">
                     {getFileCardComponent()}
                   </div>
                 )}

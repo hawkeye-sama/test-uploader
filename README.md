@@ -10,6 +10,12 @@ TechStack
 - MongoDB 6.0.13
 - GCP
 
+## Added Functionalities
+
+- [x] Fuzzy filename search
+- [x] Drag & Drop File Upload
+- [x] Mobile UI Optimizations
+
 ## API Endpoints
 
 - Fetch all files URL
