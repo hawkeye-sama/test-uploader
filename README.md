@@ -1,5 +1,7 @@
 # This is NextJS based PDF Uploader & Downloader
 
+Production url [https://test-uploader-lemon.vercel.app/](https://test-uploader-lemon.vercel.app/)
+
 TechStack
 
 - Node v18.17.0
@@ -7,6 +9,14 @@ TechStack
 - NextJS API Functions for Backend in NodeJS ( see /src/api folder )
 - MongoDB 6.0.13
 - GCP
+
+## API Endpoints
+
+- Fetch all files URL
+  GET: `/api/getFiles`
+
+- Uploading file
+  POST: `/api/upload`
 
 ## Setup
 
@@ -49,6 +59,8 @@ From your GCP Service account credentials provide the following inside `.env.loc
 Provide your mongodb url  
 
 `MONGODB_URI="" # MONGO DB URL which includes username and password`
+
+For Vercel Production, Please add these key under environment variables of your project
 
 ## Developement
 
