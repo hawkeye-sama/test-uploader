@@ -52,4 +52,4 @@ Thumbs.db
 .next/
 .next/*
 .vercel
-.env*.local
+.env.local

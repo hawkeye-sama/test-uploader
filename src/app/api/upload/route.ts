@@ -15,7 +15,7 @@ export const POST = async (req: NextRequest) => {
 
     const { CLIENT_EMAIL, PRIVATE_KEY, PROJECT_ID, BUCKET_NAME } = process.env;
 
-    // Save filename to database
+    // connect to database
     await connect();
 
     const _id = new mongoose.Types.ObjectId();

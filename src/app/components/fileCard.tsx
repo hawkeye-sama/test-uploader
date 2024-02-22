@@ -5,6 +5,7 @@ interface FileCardProps {
   filePath: string;
 }
 
+// Component to show files and download them
 function FileCard({ filename, filePath }: FileCardProps) {
   // Show only fewer letters
   const split = filename.split(".");

@@ -23,7 +23,6 @@ const config: Config = {
       },
     },
   },
-  // eslint-disable-next-line global-require
   plugins: [],
 };
 export default config;

@@ -1,5 +1,6 @@
 import { memo } from "react";
 
+// Component to show circular loading animation
 function Loader() {
   return (
     <svg

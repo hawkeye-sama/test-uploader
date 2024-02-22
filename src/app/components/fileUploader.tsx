@@ -5,6 +5,7 @@ import { UserFileModel } from "../common/models";
 import FileListContext from "../utils/context";
 import Loader from "./loader";
 
+// Component to upload pdf files
 export default function FileUploader() {
   const [isUploading, setIsUploading] = useState<boolean>(false);
 
