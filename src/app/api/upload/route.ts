@@ -24,7 +24,7 @@ export const POST = async (req: NextRequest) => {
       _id,
       filename: file?.name,
       uploadedBy: req.ip,
-      filePath: `https://storage.cloud.google.com/${BUCKET_NAME}/uploads/${_id}.pdf`,
+      filePath: `https://storage.googleapis.com/${BUCKET_NAME}/uploads/${_id}.pdf`,
     });
 
     // GCP Upload by using Storage API
